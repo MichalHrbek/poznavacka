@@ -1,17 +1,22 @@
+:root {
+    --primary-color: #2b323d;
+    --secondary-color: #a8a8a8;
+  }
+
 .correct:active {
-    background-color: green;
+    background-color: lightgreen;
 }
 
 .incorrect:active {
-    background-color: red;
+    background-color: lightcoral;
 }
 
 body {
-    background-color: darkgray;
+    background-color: var(--primary-color);
 }
 
 button {
-    background-color: white;
+    background-color: var(--secondary-color);
     color: black;
     font-size: medium;
     border: 0;
@@ -20,24 +25,25 @@ button {
 }
 
 button:hover {
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     margin: 0px 1px 0px 1px;
 }
 
 .module {
-    border: 2px solid black;
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
     margin: 5px 20px 5px 20px;
 }
 
 .textmodule {
     padding: 10px 15px 10px 15px;
+    color: var(--secondary-color);
 }
 
 .container {
     margin: auto;
     padding: 15px 15px 15px 15px;
     width: fit-content;
-    border: 2px solid black;
+    border: 2px solid var(--secondary-color);
     border-radius: 20px;
 }

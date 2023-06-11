@@ -77,11 +77,10 @@ async function main()
             loading = true
             if (guess == answer) {
                 ++correctCounter.val
-                newFlower()
+                await newFlower()
             }
             else {
                 ++incorrectCounter.val
-                console.log()
             }
             loading = false
         }
